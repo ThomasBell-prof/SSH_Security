@@ -1,10 +1,10 @@
-<h2><span style="white-space: nowrap;">📚👨🏽‍🎓 Using SSH Keys to Manage Multiple GitHub Identities 🔐</span></h2>
+<h2 align="center"><span style="white-space: nowrap;">📚👨🏽‍🎓 Using SSH Keys to Manage Multiple GitHub Identities 🔐</span></h2>
 
 > A Developer’s Guide to Multi‑GitHub SSH Configuration
 >
 > > by: Thomas Bell
 
-## Reasons:
+### Why?:
 
 > The purpose of this guide is to help those with multiple GitHub accounts whether professional or personal on a single computer to start using SSH keys for more secure accessibility.
 
