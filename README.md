@@ -99,8 +99,8 @@ IdentityFile ~/.ssh/github_freelance_key
 
 ### 4️⃣ Setup Github SSH
 
-- Login to Github
-- - Click your profile picture in the top right corner
-- - - Click settings
-- - - - On the left-hand side click on SSH and GPG keys
-- - - - - Click the green button on the right, New SSH key
+- 🐙 Login to GitHub  
+  - 👤 Click your profile picture in the top right corner
+    - ⚙️ Select **Settings**  
+      - 🔐 Choose **SSH and GPG keys**  
+        - ➕ Click **New SSH key**  
