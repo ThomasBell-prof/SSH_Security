@@ -117,9 +117,29 @@ cat ~/.ssh/github-professional_key.pub
 > Repeat step 4 for each account you have and remember to call the appropriate public key (personal, freelance, etc.)
 ---
 
-### 5️⃣ Test
+### 5️⃣ Add Keys to the SSH Agent
 
 - In your vs-code terminal
+```bash
+eval "$(ssh-agent -s)"
+```
+
+```bash
+ssh-add ~/.ssh/github-professional_key
+```
+> Repeat step 5 for each account
+
+- You can use...
+```bash
+ssh-add -l
+```
+ - to list all active agents
+---
+
+### 6️⃣ Test
+
+- In your vs-code terminal
+
 ```bash
 ssh -T git@github-professional
 ```
@@ -137,3 +157,26 @@ ssh -T git@github-freelance
 + Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 ---
+
+### 7️⃣ 🏁 Last step - Clone your Repo
+
+```bash
+git clone git@github-professional:"your-professional-username"/"your-professional-repo".git
+```
+> You are done at this point.  Happy coding and good luck!
+---
+
+#### For your information
+
+> If at any time you made a mistake and need to delete a key from your machine, enter the following code.
+```bash
+ssh-add -d ~/.ssh/github-professional_key
+```
+
+> If you want to delete all your keys and go back to entering your password everytime with Github ☹️
+```bash
+ssh-add -D
+```
+---
+
+I hope this repo has been helpful.  Thank you!
