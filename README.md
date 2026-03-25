@@ -12,7 +12,7 @@
 - Supports unlimited user accounts
 ---
 
-### 1. Generate SSH keys for each account
+### 1️⃣ Generate SSH keys for each account
 
 > Click copy and paste the code in your terminal and press enter, one at a time to create each ssh key
 
@@ -32,7 +32,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/github_freelance_key -C "your-freelance-email@pr
 ```
 ---
 
-### 2. Create SSH Config file
+### 2️⃣ Create SSH Config file
 
 > Click copy and paste the code in your terminal and press enter to create the ssh config file
 
@@ -41,7 +41,7 @@ chmod 600 ~/.ssh/config
 chmod 700 ~/.ssh
 ```
 > what the above code does: it ensures the config file is readable/writable only by you and the directory is only accessible by you
-* Note: if you run the above code and the files already exist, it will not hurt anything.
+Note: if you run the above code and the files already exist, it will not hurt anything.
 
 ```bash
 code ~/.ssh/config
@@ -49,22 +49,27 @@ code ~/.ssh/config
 > this adds the config file even if it doesn't exist and opens it in vs-code
 ---
 
-### 3. Edit Config file
+### 3️⃣ Edit Config file
 - In VS-code you can use the same config file to add multiple accounts
 
 ```yaml
+# Professional Github account
 Host github-professional
 HostName github.com
 User git
 IdentityFile ~/.ssh/github_professional_key
 
+# Personal Github account
 Host github-personal
 HostName github.com
 User git
 IdentityFile ~/.ssh/github_personal_key
 
+# Freelance Github account
 Host github-freelance
 HostName github.com
 User git
 IdentityFile ~/.ssh/github_freelance_key
 ````
+---
+
