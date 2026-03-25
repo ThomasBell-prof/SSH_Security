@@ -164,6 +164,11 @@ ssh -T git@github-freelance
 ```bash
 git clone git@github-professional:"your-professional-username"/"your-professional-repo".git
 ```
+
+```bash
+# EXAMPLE
+git clone git@github-personal:ThomasBell-prof/How-to_Multi-SSH_Configuration.git
+```
 > You are done at this point.  Happy coding and good luck!
 ---
 
